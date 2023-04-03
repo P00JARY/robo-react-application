@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Candy Shop';
+    src: local('Candy-Shop'), url('Candy-Shop.ttf') format('truetype');
+}
+
+h1{
+    font-family: "Candy Shop";
+    font-weight: 500;
+}
