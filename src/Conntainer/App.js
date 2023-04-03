@@ -21,7 +21,8 @@ export default function App()  {
         const filteredRobots = roborts.filter(robot => {
             return robot.name.toLowerCase().includes(event.target.value.toLowerCase())
         })
-        setrobo(prevState => ({ ...prevState, roborts: filteredRobots, searchField: event.target.value }))
+        // setrobo(prevState => ({ ...prevState, roborts: filteredRobots, searchField: event.target.value }))
+        setrobo({roborts:filteredRobots,searchField: event.target.value})
         console.log(robo.roborts);
     }
 
