@@ -15,6 +15,12 @@ export default function App()  {
         searchField: ""
     })
 
+    useEffect(()=>{
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(res => res.json())
+            .then(users => setrobo({roborts: users}))
+    },[])
+
 
     const onChangeSearch = (event) => {
         console.log(event.target.value);
@@ -26,13 +32,13 @@ export default function App()  {
         console.log(robo.roborts);
     }
 
-    useEffect(() => {
-        return (() => {
-            fetch('https://jsonplaceholder.typicode.com/users')
-                .then(res => res.json())
-                .then(users => setrobo({roborts: users}))
-        })
-    }, []);
+    // useEffect(() => {
+    //     return (() => {
+    //         fetch('https://jsonplaceholder.typicode.com/users')
+    //             .then(res => res.json())
+    //             .then(users => setrobo({roborts: users}))
+    //     })
+    // }, []);
 
 
     return (
