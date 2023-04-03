@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "f0d3e469794916a51942",
+    "revision": "716958af0ca5dd5605d9",
     "url": "/static/css/main.75eeb5f6.chunk.css"
   },
   {
-    "revision": "f0d3e469794916a51942",
-    "url": "/static/js/main.f0d3e469.chunk.js"
+    "revision": "716958af0ca5dd5605d9",
+    "url": "/static/js/main.716958af.chunk.js"
   },
   {
     "revision": "93afd9afea901b8c95c0",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/static/media/Candy-Shop.9237412d.ttf"
   },
   {
-    "revision": "84789c09fea96312a8b231984fa03232",
+    "revision": "c9c722abcd3cda6e91a4737e57959cce",
     "url": "/index.html"
   }
 ];

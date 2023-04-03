@@ -26,12 +26,11 @@ export default function App()  {
     }
 
     useEffect(() => {
-        alert('Welcome to Robo-friends :) ')
-        return () => {
+        return (() => {
             fetch('https://jsonplaceholder.typicode.com/users')
                 .then(res => res.json())
                 .then(users => setrobo({roborts: users}))
-        }
+        })
     }, []);
 
 
