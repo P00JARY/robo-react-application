@@ -5,7 +5,6 @@ import CardList from '../Componnents/CardList.js';
 import SearchBox from '../Componnents/SearchBox.js';
 import Scroll from '../Componnents/Scroll.js';
 import './App.css';
-import ErrorBoundary from "../Componnents/ErrorBoundary";
 
 
 export default function App()  {
@@ -45,10 +44,7 @@ export default function App()  {
             <h1>Robo Friends</h1>
             <SearchBox setValue={onChangeSearch} />
             <Scroll>
-                <ErrorBoundary>
-                    <CardList roborts={robo.roborts} />
-                </ErrorBoundary>
-
+                <CardList roborts={robo.roborts} />
             </Scroll>
 
         </div>
